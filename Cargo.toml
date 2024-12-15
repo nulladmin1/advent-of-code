@@ -1,6 +1,17 @@
-[package]
-name = "rust"
+[workspace.package]
+name = "aoc"
 version = "0.1.0"
 edition = "2021"
+authors = ["nulladmin1"]
+license = "MIT"
+description = "Advent of Code"
+homepage = "https://github.com/nulladmin1/advent-of-code"
+repository = "https://github.com/nulladmin1/advent-of-code"
+readme = "README.md"
 
-[dependencies]
+[workspace]
+
+members = [
+  "aoclib",
+  "aoc2024",
+]
