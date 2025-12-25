@@ -1,0 +1,15 @@
+# https://just.systems
+
+default:
+    just --list
+
+[private]
+one_part_day day file:
+    dune exec bin/{{day}}/{{day}}.exe -- bin/{{day}}/{{file}}.txt
+    
+
+day01-part1 file:
+    dune exec bin/day01/part1.exe -- bin/day01/{{file}}.txt
+
+day01-part2 file:
+    dune exec bin/day01/part2.ml -- bin/day01/{{file}}.txt
