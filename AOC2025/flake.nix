@@ -32,6 +32,7 @@
           ++ (with pkgs.ocamlPackages; [
             dune_3
             odoc
+            ocaml-lsp
           ]);
       };
     });
