@@ -1,7 +1,7 @@
 (executable
  (name part1)
- (modules common part1))
+ (libraries common))
 
 (executable
  (name part2)
- (modules common part2))
+ (libraries common))

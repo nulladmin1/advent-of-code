@@ -1,5 +1,9 @@
 open Common
 
+let parse_string str =
+  let num = int_of_string (String.sub str 1 (String.length str - 1)) in
+  (String.get str 0, num)
+
 let rotate_loopback current = ((current mod 100) + 100) mod 100
 
 let rotate current direction value =
