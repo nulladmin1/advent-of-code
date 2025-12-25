@@ -1,2 +1,7 @@
 (executable
- (name day01))
+ (name part1)
+ (modules common part1))
+
+(executable
+ (name part2)
+ (modules common part2))
