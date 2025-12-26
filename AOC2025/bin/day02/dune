@@ -1,0 +1,9 @@
+(executable
+ (name part1)
+ (libraries common)
+ (modules shared part1))
+
+(executable
+ (name part2)
+ (libraries common)
+ (modules shared part2))

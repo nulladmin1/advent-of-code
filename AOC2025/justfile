@@ -2,6 +2,7 @@
 
 default:
     just --list
+    @echo "'file' is either example or input"
 
 [private]
 one_part_day day file:
@@ -12,4 +13,12 @@ day01-part1 file:
     dune exec bin/day01/part1.exe -- bin/day01/{{file}}.txt
 
 day01-part2 file:
-    dune exec bin/day01/part2.ml -- bin/day01/{{file}}.txt
+    dune exec bin/day01/part2.exe -- bin/day01/{{file}}.txt
+
+day02-part1 file:
+    dune exec bin/day02/part1.exe -- bin/day02/{{file}}.txt
+    
+
+day02-part2 file:
+    dune exec bin/day02/part2.exe -- bin/day02/{{file}}.txt
+    
